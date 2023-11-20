@@ -1,0 +1,77 @@
+.plans-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -4rem;
+    padding: 0 2rem;
+    gap: 4rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.plans{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 3rem; */
+
+    gap: 3rem;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--caloryCard);
+    padding: 1rem;
+    color: white;
+    gap: 2rem;
+    border-radius: 0.25rem;
+    /* align-items: center; */
+}
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plan>:nth-child(2){
+    font-weight: bold;
+    font-size: 1rem;
+}
+.plan>:nth-child(3){
+    font-weight: bold;
+    font-size: 2rem;
+}
+.plan>svg{
+    height: 2rem;
+    width: 2rem;
+    fill: var(--orange);
+}
+.plan:nth-child(2)>svg{
+    fill: white;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.plans-blur-1{
+    width: 32rem;
+    height: 20rem;
+    top: 6rem;
+    left: 6rem;
+}
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0rem;
+}
+@media screen and (max-width:768px){
+    .plans{
+        flex-direction: column;
+    }
+    .plan:nth-child(2){
+        transform: none;
+    }
+
+}

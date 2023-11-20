@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+  background-color: #faf5f5;
+  border: 2px solid red;
+}
+.box{
+  margin: 1px;
+  display: inline-block;
+}
+.container{
+position: relative;
+  border: 2px solid blue;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+#dabba1{ 
+  position: static;
+   width:20%;
+  height: 40px;
+  margin-left: 4px;
+  background-color: lightgreen;
+}
+#dabba2{
+    position: static;
+  width:20%;
+   height: 40px;
+  margin-left: 4px;
+  background-color: #ada068;
+}
+#dabba3{
+    position:absolute;
+   width:20%;
+   height: 40px;
+  margin-left: 4px;
+  background-color: #578a89;
+  top: 20px; left: 30px;
+}
+#dabba4{
+    position: static;
+  width:30%;
+   height: 40px;
+  margin-left: 4px;
+  background-color: lightgrey;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+<div class="box" id="dabba1">1</div>
+<div class="box" id="dabba2">2</div>
+<div class="box" id="dabba3">3</div>
+<div class="box" id="dabba4">4</div>
+</div>
+</body>
+</html>
